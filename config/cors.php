@@ -22,8 +22,8 @@ return [
     'allowed_origins' => [
         'http://localhost:3000',
         'http://localhost:3001',
-        'https://codeforge-systems.com',
-        'https://www.codeforge-systems.com',
+        'https://codeforgesystems.co.uk',
+        'https://www.codeforgesystems.co.uk',
     ],
 
     'allowed_origins_patterns' => [],
