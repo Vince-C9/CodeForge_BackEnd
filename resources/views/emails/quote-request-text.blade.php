@@ -73,5 +73,5 @@ IP Address: {{ $submission->sanitized_ip ?? $submission->ip_address }}
 @endif
 
 ---
-ACTION REQUIRED: Please review this quote request and respond within 24 hours.
+ACTION REQUIRED: Please review this quote request and respond within 48 hours.
 This is an automated notification from your CodeForge Systems website configurator.

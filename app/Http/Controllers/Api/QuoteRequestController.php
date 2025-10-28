@@ -57,7 +57,7 @@ class QuoteRequestController extends Controller
 
             return response()->json([
                 'success' => true,
-                'message' => 'Thank you for your quote request! We will review your requirements and send you a detailed quote within 24 hours.',
+                'message' => 'Thank you for your quote request! We will review your requirements and send you a detailed quote within 48 hours.',
                 'submission_id' => $submission->id,
                 'estimated_total' => $submission->total_price,
             ], 201);

@@ -249,7 +249,7 @@
 
             <div class="highlight-box">
                 <h3>What happens next?</h3>
-                <p>Our team will review your website configuration and get back to you with a detailed quote within <strong>24 hours</strong>. We'll provide you with a comprehensive breakdown of costs, timelines, and next steps.</p>
+                <p>Our team will review your website configuration and get back to you with a detailed quote within <strong>48 hours</strong>. We'll provide you with a comprehensive breakdown of costs, timelines, and next steps.</p>
             </div>
 
             <div class="info-box">

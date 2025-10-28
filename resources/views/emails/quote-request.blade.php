@@ -302,7 +302,7 @@
         </div>
 
         <div class="footer">
-            <p><strong>Action Required:</strong> Please review this quote request and respond within 24 hours.</p>
+            <p><strong>Action Required:</strong> Please review this quote request and respond within 48 hours.</p>
             <p>This is an automated notification from your CodeForge Systems website configurator.</p>
         </div>
     </div>
