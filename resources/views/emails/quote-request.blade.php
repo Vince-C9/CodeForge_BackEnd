@@ -22,8 +22,8 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         .header {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-            color: #ffffff;
+            background: #059669;
+            color: #000000;
             padding: 30px 20px;
             text-align: center;
         }
