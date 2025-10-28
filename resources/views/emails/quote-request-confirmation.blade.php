@@ -267,46 +267,6 @@
                 </div>
             </div>
 
-            <!-- Important Information Section -->
-            <div class="warning-box">
-                <h3><span class="warning-icon">⚠️</span> Important Information About Your Website</h3>
-                <p>Before we proceed, there are some crucial things you should know about website ownership and maintenance:</p>
-
-                <ul class="gotcha-list">
-                    <li class="gotcha-item">
-                        <strong>Domain Name Renewals:</strong> Domain names must be renewed annually (typically around £10-15/year). If you fail to renew your domain, someone else can purchase it, and you may lose your website address permanently. We strongly recommend setting up auto-renewal to prevent this.
-                    </li>
-
-                    <li class="gotcha-item">
-                        <strong>Email Service Dependency:</strong> If your domain expires, you will immediately lose access to all email addresses associated with that domain (e.g., contact@yourbusiness.com). This can disrupt business communications significantly.
-                    </li>
-
-                    <li class="gotcha-item">
-                        <strong>Web Hosting Renewals:</strong> Your website hosting must also be renewed annually (our packages include this at £120/year). If hosting expires, your website will go offline and be inaccessible to visitors.
-                    </li>
-
-                    <li class="gotcha-item">
-                        <strong>SSL Certificate Maintenance:</strong> SSL certificates (the padlock icon in browsers) need to be kept current for security and trust. Without a valid SSL, browsers will warn visitors that your site is "not secure," which can severely impact your business credibility.
-                    </li>
-
-                    <li class="gotcha-item">
-                        <strong>Regular Backups:</strong> Your website should be backed up regularly. Our hosting includes automatic daily backups, but it's important to understand that if you switch providers, you'll need to ensure backups are maintained.
-                    </li>
-
-                    <li class="gotcha-item">
-                        <strong>Software Updates:</strong> Websites require periodic updates for security and performance. Outdated websites are vulnerable to hacking and may stop functioning properly over time.  As a part of our SLA, this will be handled for you.
-                    </li>
-
-                    <li class="gotcha-item">
-                        <strong>Third-Party Service Costs:</strong> Some features may require third-party services with separate costs (e.g., payment processing fees, advanced email marketing tools, premium plugins). We'll clearly outline any such requirements in your detailed quote.
-                    </li>
-
-                    <li class="gotcha-item">
-                        <strong>Content Management:</strong> While we build your website, you'll be responsible for updating content (text, images, etc.) unless you opt for a maintenance package. We provide training, but there may be a learning curve.  We will ensure that you are happy with your initial content setup before we push you live!
-                    </li>
-                </ul>
-            </div>
-
             <div class="cta-box">
                 <h3>We're Here to Help!</h3>
                 <p>Our goal is to make website ownership as smooth and worry-free as possible. We'll guide you through every step and offer ongoing support to ensure your success.</p>
