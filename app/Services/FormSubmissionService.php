@@ -2,7 +2,9 @@
 
 namespace App\Services;
 
+use App\Mail\ContactFormConfirmation;
 use App\Mail\ContactFormNotification;
+use App\Mail\QuoteRequestConfirmation;
 use App\Mail\QuoteRequestNotification;
 use App\Models\FormSubmission;
 use App\Services\Contracts\FormSubmissionServiceInterface;
@@ -47,12 +49,23 @@ class FormSubmissionService implements FormSubmissionServiceInterface
                 'status' => 'new',
             ]);
 
-            // Send email notification
+            // Send email notification to admin
             try {
                 Mail::send(new ContactFormNotification($submission));
             } catch (\Exception $e) {
                 // Log email error but don't fail the submission
                 Log::error('Failed to send contact form notification email', [
+                    'submission_id' => $submission->id,
+                    'error' => $e->getMessage(),
+                ]);
+            }
+
+            // Send confirmation email to customer
+            try {
+                Mail::send(new ContactFormConfirmation($submission));
+            } catch (\Exception $e) {
+                // Log email error but don't fail the submission
+                Log::error('Failed to send contact form confirmation email to customer', [
                     'submission_id' => $submission->id,
                     'error' => $e->getMessage(),
                 ]);
@@ -99,12 +112,23 @@ class FormSubmissionService implements FormSubmissionServiceInterface
                 'status' => 'new',
             ]);
 
-            // Send email notification
+            // Send email notification to admin
             try {
                 Mail::send(new QuoteRequestNotification($submission));
             } catch (\Exception $e) {
                 // Log email error but don't fail the submission
                 Log::error('Failed to send quote request notification email', [
+                    'submission_id' => $submission->id,
+                    'error' => $e->getMessage(),
+                ]);
+            }
+
+            // Send confirmation email to customer
+            try {
+                Mail::send(new QuoteRequestConfirmation($submission));
+            } catch (\Exception $e) {
+                // Log email error but don't fail the submission
+                Log::error('Failed to send quote request confirmation email to customer', [
                     'submission_id' => $submission->id,
                     'error' => $e->getMessage(),
                 ]);
