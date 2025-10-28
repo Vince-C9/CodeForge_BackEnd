@@ -68,7 +68,7 @@ class QuoteRequestNotification extends Mailable
                 'configuration' => $this->submission->configuration,
                 'pageType' => $this->getPageTypeLabel(),
                 'features' => $this->getFormattedFeatures(),
-                'basePrice' => 300,
+                'basePrice' => 350,
                 'additionalPagesCount' => count($this->submission->configuration['additionalPages'] ?? []),
                 'additionalPagesPrice' => count($this->submission->configuration['additionalPages'] ?? []) * 50,
                 'featuresTotal' => $this->calculateFeaturesTotal(),
