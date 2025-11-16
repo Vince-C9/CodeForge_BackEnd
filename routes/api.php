@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ArticleController;
 use App\Http\Controllers\Api\ContactFormController;
 use App\Http\Controllers\Api\QuoteRequestController;
 use App\Http\Controllers\BetaAuthController;
@@ -68,4 +69,15 @@ Route::prefix('beta')->group(function () {
     // Check beta access status
     Route::get('/check-access', [BetaAuthController::class, 'checkAccess'])
         ->name('api.beta.check-access');
+});
+
+// Article Routes
+Route::prefix('articles')->group(function () {
+    // Get paginated list of articles
+    Route::get('/', [ArticleController::class, 'index'])
+        ->name('api.articles.index');
+
+    // Get single article by slug
+    Route::get('/{slug}', [ArticleController::class, 'show'])
+        ->name('api.articles.show');
 });
