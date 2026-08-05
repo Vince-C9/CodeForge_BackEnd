@@ -49,11 +49,25 @@ class FormSubmissionService implements FormSubmissionServiceInterface
                 'status' => 'new',
             ]);
 
+            // Debug: log mail config so we can verify .env is loaded correctly
+            Log::info('Mail config debug', [
+                'submission_id' => $submission->id,
+                'mail.default' => config('mail.default'),
+                'mail.mailers.smtp.host' => config('mail.mailers.smtp.host'),
+                'mail.mailers.smtp.port' => config('mail.mailers.smtp.port'),
+                'mail.mailers.smtp.encryption' => config('mail.mailers.smtp.encryption'),
+                'mail.mailers.smtp.username' => config('mail.mailers.smtp.username'),
+                'mail.from.address' => config('mail.from.address'),
+                'mail.from.name' => config('mail.from.name'),
+                'mail.info_address' => config('mail.info_address'),
+                'mail.quotes_address' => config('mail.quotes_address'),
+            ]);
+
             // Send email notification to admin
             try {
                 Mail::send(new ContactFormNotification($submission));
+                Log::info('Admin notification email sent', ['submission_id' => $submission->id]);
             } catch (\Exception $e) {
-                // Log email error but don't fail the submission
                 Log::error('Failed to send contact form notification email', [
                     'submission_id' => $submission->id,
                     'error' => $e->getMessage(),
@@ -63,8 +77,8 @@ class FormSubmissionService implements FormSubmissionServiceInterface
             // Send confirmation email to customer
             try {
                 Mail::send(new ContactFormConfirmation($submission));
+                Log::info('Customer confirmation email sent', ['submission_id' => $submission->id, 'to' => $submission->email]);
             } catch (\Exception $e) {
-                // Log email error but don't fail the submission
                 Log::error('Failed to send contact form confirmation email to customer', [
                     'submission_id' => $submission->id,
                     'error' => $e->getMessage(),

@@ -157,9 +157,8 @@
         <!-- Navigation -->
         <div class="nav">
             <a href="https://codeforgesystems.co.uk/">Home</a>
-            <a href="https://codeforgesystems.co.uk/services">Services</a>
+            <a href="https://codeforgesystems.co.uk/approach">Approach</a>
             <a href="https://codeforgesystems.co.uk/portfolio">Portfolio</a>
-            <a href="https://codeforgesystems.co.uk/configurator">Quote Builder</a>
             <a href="https://codeforgesystems.co.uk/contact">Contact</a>
         </div>
 
@@ -173,7 +172,7 @@
 
             <div class="highlight-box">
                 <h3>What happens next?</h3>
-                <p>Our team will review your inquiry and get back to you within <strong>48 hours</strong>. We're committed to providing you with the information and support you need.</p>
+                <p>I'll review your message and aim to get back to you within <strong>one working day</strong>. If it sounds like a good fit, I'll suggest a short call to discuss further.</p>
             </div>
 
             <div class="info-box">
@@ -188,8 +187,7 @@
             </div>
 
             <div class="message">
-                <p>In the meantime, feel free to explore our services or check out our portfolio to see examples of our work.</p>
-                <p>If you have any urgent questions, please don't hesitate to reach out to us directly.</p>
+                <p>In the meantime, feel free to take a look at my <a href="https://codeforgesystems.co.uk/portfolio" style="color: #2563eb;">portfolio</a> to see examples of recent work.</p>
             </div>
         </div>
 
@@ -201,14 +199,13 @@
                 </div>
 
                 <div class="footer-info">
-                    Professional software engineering services for businesses across the UK
+                    Senior software engineering and technical leadership, available on contract across the UK.
                 </div>
 
                 <div class="footer-links">
-                    <a href="https://codeforgesystems.co.uk/services?tab=contractor">Contract Development</a>
-                    <a href="https://codeforgesystems.co.uk/services">Web Applications</a>
-                    <a href="https://codeforgesystems.co.uk/services">AI Integration</a>
-                    <a href="https://codeforgesystems.co.uk/services">Website Packages</a>
+                    <a href="https://codeforgesystems.co.uk/approach">Approach</a>
+                    <a href="https://codeforgesystems.co.uk/portfolio">Portfolio</a>
+                    <a href="https://codeforgesystems.co.uk/contact">Contact</a>
                 </div>
 
                 <div class="footer-links">

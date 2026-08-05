@@ -108,13 +108,6 @@
                 </div>
             </div>
 
-            @if($service)
-            <div class="info-section">
-                <div class="info-label">Service Interested In</div>
-                <div class="info-value">{{ $service }}</div>
-            </div>
-            @endif
-
             <div class="info-section">
                 <div class="info-label">Name</div>
                 <div class="info-value">{{ $submission->name }}</div>

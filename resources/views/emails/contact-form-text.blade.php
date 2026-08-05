@@ -2,9 +2,6 @@ NEW CONTACT FORM SUBMISSION
 ================================
 
 Contact Reason: {{ $contactReason }}
-@if($service)
-Service: {{ $service }}
-@endif
 
 CONTACT DETAILS
 ---------------
